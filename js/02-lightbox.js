@@ -11,16 +11,16 @@ function createGalleryCardsMarkup(galleryItems) {
       return `
          
         <a class="gallery__item" href="${original}">
-        <img class="gallery__image" src="${preview}" alt="${description}" /> </a>
+        <img class="gallery__image" src="${preview}" title = "${description}" alt = "${description}" /> </a>
         `;
     })
     .join("");
     };
 
 
-    new SimpleLightbox('.gallery a', {
-        captionDelay: 250,
-        
-    });
+    
+new SimpleLightbox('.gallery a', {
+	captionDelay: 250
+})
 
  
