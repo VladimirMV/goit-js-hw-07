@@ -11,7 +11,7 @@ function createGalleryCardsMarkup(galleryItems) {
       return `
          
         <a class="gallery__item" href="${original}">
-        <img class="gallery__image" src="${preview}" title = "${description}" alt = "${description}" /> </a>
+        <img class="gallery__image" src="${preview}"   alt = "${description}" /> </a>
         `;
     })
     .join("");
@@ -21,7 +21,7 @@ function createGalleryCardsMarkup(galleryItems) {
     
 new SimpleLightbox('.gallery a', {
 	captionDelay: 250,
-  //  captionsData: alt
+  captionsData: 'alt',
 })
 
  
